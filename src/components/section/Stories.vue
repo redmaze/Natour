@@ -2,8 +2,8 @@
     <section class="section-stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4">
-                        <source src="img/video.webm" type="video/webm">
+                        <source :src="require('@/assets/img/video.mp4')" type="video/mp4">
+                        <source :src="require('@/assets/img/video.webm')" type="video/webm">
                         Your browser is not supported!
                     </video>
                 </div>
@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                            <img :src="require('@/assets/img/nat-8.jpg')" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">Mary Smith</figcaption>
                         </figure>
                         <div class="story__text">
@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                            <img :src="require('@/assets/img/nat-9.jpg')" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">Jack Wilson</figcaption>
                         </figure>
                         <div class="story__text">

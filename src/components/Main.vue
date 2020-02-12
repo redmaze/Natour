@@ -1,59 +1,12 @@
 <template>
     <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Exciting tours for adventurous people
-                    </h2>
-                </div>
+        <About />
+        <Feature />
+        <Tours />
+        <Stories />
+        <Book />
 
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui.
-                        </p>
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.
-                        </p>
-
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-
-                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                                 alt="Photo 1"
-                                 class="composition__photo composition__photo--p1"
-                                 src="img/nat-1-large.jpg">
-
-                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
-                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                                 alt="Photo 2"
-                                 class="composition__photo composition__photo--p2"
-                                 src="img/nat-2-large.jpg">
-
-                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
-                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                                 alt="Photo 3"
-                                 class="composition__photo composition__photo--p3"
-                                 src="img/nat-3-large.jpg">
-
-                            <!--
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                            -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-features">
+            <!-- <section class="section-features">
 
                 <div class="row">
                     <div class="col-1-of-4">
@@ -210,8 +163,8 @@
             <section class="section-stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4">
-                        <source src="img/video.webm" type="video/webm">
+                        <source :src="require('@/assets/img/video.mp4')" type="video/mp4">
+                        <source :src="require('@/assets/img/video.webm')" type="video/webm">
                         Your browser is not supported!
                     </video>
                 </div>
@@ -225,7 +178,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                            <img :src="require('@/assets/img/nat-8.jpg')" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">Mary Smith</figcaption>
                         </figure>
                         <div class="story__text">
@@ -242,7 +195,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                            <img :src="require('@/assets/img/nat-9.jpg')" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">Jack Wilson</figcaption>
                         </figure>
                         <div class="story__text">
@@ -307,6 +260,25 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 </template>
+
+<script>
+import About from './section/About.vue'
+import Book from './section/Book.vue'
+import Feature from './section/Feature.vue'
+import Stories from './section/Stories.vue'
+import Tours from './section/Tours.vue'
+
+export default {
+  name: 'Main',
+  components: {
+    About,
+    Book,
+    Feature,
+    Stories,
+    Tours
+  }
+}
+</script>
