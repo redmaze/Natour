@@ -37,6 +37,10 @@ export default {
   components: {
     StoryCard
   },
+  async mounted () {
+    //   let response = await getStories();
+    //   this.stories = response.data;
+  },
   data () {
     return {
       stories: [
