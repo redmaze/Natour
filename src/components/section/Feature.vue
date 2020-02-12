@@ -1,45 +1,49 @@
 <template>
     <section class="section-features">
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-world"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-compass"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-map"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
-                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-heart"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="row">
+            <FeatureCard
+                v-for="(feature, idx) in features"
+                :key="idx"
+                :title="feature.title"
+                :icon="feature.icon"
+                :text="feature.text" />
+        </div>
+    </section>
 </template>
+
+<script>
+import FeatureCard from '@/components/FeatureCard'
+
+export default {
+  name: 'Feature-Section',
+  components: {
+    FeatureCard
+  },
+  data () {
+    return {
+      features: [
+        {
+          icon: 'icon-basic-world',
+          title: 'Explore the world',
+          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.'
+        },
+        {
+          icon: 'icon-basic-compass',
+          title: 'Meet nature',
+          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.'
+        },
+        {
+          icon: 'icon-basic-map',
+          title: 'Find your way',
+          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.'
+        },
+        {
+          icon: 'icon-basic-heart',
+          title: 'Live a healthier life',
+          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.'
+        }
+      ]
+    }
+  }
+}
+</script>

@@ -1,7 +1,7 @@
 <template>
     <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
                         Exciting tours for adventurous people
                     </h2>
                 </div>
