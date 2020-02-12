@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import FeatureCard from '@/components/FeatureCard'
+import FeatureCard from '@/components/card/FeatureCard'
 
 export default {
   name: 'Feature-Section',

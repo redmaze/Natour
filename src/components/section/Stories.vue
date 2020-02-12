@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import StoryCard from '@/components/StoryCard'
+import StoryCard from '@/components/card/StoryCard'
 
 export default {
   name: 'Story-Section',
@@ -44,13 +44,21 @@ export default {
           img: 'nat-8.jpg',
           name: 'Mary Smith',
           title: 'I had the best week ever with my family',
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.'
+          text: `
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+            `
         },
         {
           img: 'nat-9.jpg',
           name: 'Jack Wilson',
           title: 'WOW! My life is completely different now',
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.'
+          text: `
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+            `
         }
       ]
     }

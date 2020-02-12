@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import SpinningCard from '@/components/SpinningCard'
+import SpinningCard from '@/components/card/SpinningCard'
 
 export default {
   name: 'Tours-Section',
