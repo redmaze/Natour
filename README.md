@@ -1,4 +1,6 @@
-# natour
+# Natour
+This project based on Udemy Course that I currently enrolled using VueJS.
+https://www.udemy.com/course/advanced-css-and-sass/ 
 
 ## Project setup
 ```
