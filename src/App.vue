@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Navigation/>
-    <!-- <Header/>
-    <Main/>
+    <Header/>
+    <!-- <Main/>
     <Footer/>
     <Popup/> -->
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 import Navigation from './components/Navigation.vue'
-// import Header from './components/Header.vue'
+import Header from './components/Header.vue'
 // import Main from './components/Main.vue'
 // import Footer from './components/Footer.vue'
 // import Popup from './components/Popup.vue'
@@ -18,8 +18,8 @@ import Navigation from './components/Navigation.vue'
 export default {
   name: 'App',
   components: {
-    Navigation
-    // Header,
+    Navigation,
+    Header
     // Main,
     // Footer,
     // Popup
